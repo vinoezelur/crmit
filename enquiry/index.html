@@ -118,9 +118,7 @@
 				<!--  value="pavithra.jayaram@crmit.com">                                     -->
 				<!--  ----------------------------------------------------------------------  -->
 				
-				<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 				
-				<label for="description">Description</label><textarea name="description"></textarea><br>
 				
 				<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="General Enquiry (GA)">General Enquiry (GA)</option>
 				<option value="Lost Card (LC)">Lost Card (LC)</option>
@@ -140,16 +138,20 @@
 				
 				<input type="submit" name="submit">
 
+				<div class="wrap-input100 bg1" data-validate="Please enter a subject ">
+					<span class="label-input100">SUBJECT *</span>
+					<input class="input100" id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Enter the subject">
+				</div>
 
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
 					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" name="description" placeholder="Your message here..."></textarea>
 				</div>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						<span>
-							Submit
+							Submit details
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 						</span>
 					</button>
