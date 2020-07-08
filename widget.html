@@ -4,6 +4,16 @@
     <title>Landing bot with BotEngine.ai</title>
 </head>
 <body>
+    <script>
+        var AKO_BOT_domain = 'https://bots.infra.ako.ai/';
+        var AKO_BOT_botHTMLPath = AKO_BOT_domain+'index.html';
+        var AKO_BOT_head = document.getElementsByTagName('head')[0];
+        var AKO_BOT_script = document.createElement('script');
+        AKO_BOT_script.type = 'text/javascript';
+        AKO_BOT_script.src = AKO_BOT_domain + 'chatplugin.js';
+        AKO_BOT_head.appendChild(AKO_BOT_script);
+        var AKO_BOT_iid = 'testy';
+    </script>
     <script type="text/javascript">
         window.__be = window.__be || {};
         window.__be.id = "5de570cb639e4e0007adacc8"; // put your chat widget id here
